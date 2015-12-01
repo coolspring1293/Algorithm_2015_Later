@@ -4,8 +4,7 @@
 //
 //  Created by Kieran Will on 11/28/15.
 //  Copyright © 2015 Kieran Will. All rights reserved.
-//
-
+//  The final exam: 状态要锁
 #include <iostream>
 #define INF 0x3f3f3f3f
 int n, a[20], m[20];
