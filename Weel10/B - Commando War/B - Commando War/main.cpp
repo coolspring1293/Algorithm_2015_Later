@@ -18,11 +18,10 @@ public:
 };
 
 bool cmp(Commando &a, Commando &b) {
-	return a.J < b.J;
+	return a.J > b.J;
 }
 vector<Commando> V;
 int N, _count = 1, B, J, start_time = 0, end_time = 0;
-int getSol(int, int);
 int main(int argc, const char * argv[]) {
     while (cin >> N and N != 0) {
 		V.clear();
@@ -33,12 +32,10 @@ int main(int argc, const char * argv[]) {
 		sort(V.begin(), V.end(), cmp);
 		start_time = end_time = 0;
 		for (int i = 0; i < V.size(); ++ i) {
-			start_time = V[i].B;
-			if (end_time < V[i].J + start_time) {
-				end_time = V[i].J + start_time;
-			}
+			start_time += V[i].B;
+			if (end_time < V[i].J + start_time)
+                end_time = V[i].J + start_time;
 		}
-
         cout << "Case " << _count ++ << ": " << end_time << "\n";
     }
     return 0;
