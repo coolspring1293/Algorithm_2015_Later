@@ -34,33 +34,7 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-/*
 
-int _ = 0;
-void getSol_2(int x, int s, int cur) {
-    cout << "\n_____ = " << _++ << "\n";
-    cout << "x=" << x << "\n";
-    cout << "s=" << s << "\n";
-    cout << "c=" << cur << "\n";
-    if (cur >= dp[x-1][s]) {
-        cout << "\n|||||||||\n"; return;
-    
-    }
-    dp[x-1][s] = cur;
-    if (x > N) return;
-    cout << (s & getState_Shift(x) )<< "\n";
-    if (s & getState_Shift(x)) {
-        cout << "\n^^^^^^^\n";
-        getSol(x+1, s, cur); return;
-    }
-    getSol(x+1, s|getState_Shift(x), cur+1);
-    for (int i = x + 1; i <= N; ++ i)
-        if((1 == abs(a[i]-a[x])) and !(s & getState_Shift(i))) {
-            cout << "\n*************\n";
-            getSol(x+1, s|getState_Shift(x)|getState_Shift(i), cur + 1); }
-}
- 
- */
 /* Search, using recursion to achieve to find the shortest.
  * @x, the location of the cursor
  * @s, the currrent statement

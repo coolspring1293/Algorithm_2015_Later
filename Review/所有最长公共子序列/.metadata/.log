@@ -1,0 +1,130 @@
+!SESSION 2015-12-25 02:18:55.128 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/liuw53/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/liuw53/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-12-25 02:19:50.748
+!MESSAGE System property http.nonProxyHosts has been set to 127.0.0.1 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.egit.core 4 0 2015-12-25 02:20:52.334
+!MESSAGE Unable to ignore resources
+!STACK 0
+java.nio.file.InvalidPathException: Malformed input or input contains unmappable chacraters: /Users/liuw53/Desktop/Algorithm_2015_Later/Review/01背包
+	at sun.nio.fs.UnixPath.encode(UnixPath.java:147)
+	at sun.nio.fs.UnixPath.<init>(UnixPath.java:71)
+	at sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:281)
+	at java.io.File.toPath(File.java:2186)
+	at org.eclipse.jgit.util.FileUtil.getFileAttributesPosix(FileUtil.java:260)
+	at org.eclipse.jgit.util.FS_POSIX.getAttributes(FS_POSIX.java:313)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.<init>(FileTreeIterator.java:169)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.entries(FileTreeIterator.java:144)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:129)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.<init>(AdaptableFileTreeIterator.java:74)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:85)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.egit.core.RepositoryUtil.isIgnored(RepositoryUtil.java:495)
+	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:95)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.autoIgnoreDerivedResources(ConnectProviderOperation.java:180)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:155)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-12-25 02:20:53.264
+!MESSAGE An internal error occurred during: "Computing Git status for repository Algorithm_2015_Later".
+!STACK 0
+java.nio.file.InvalidPathException: Malformed input or input contains unmappable chacraters: /Users/liuw53/Desktop/Algorithm_2015_Later/Review/01背包
+	at sun.nio.fs.UnixPath.encode(UnixPath.java:147)
+	at sun.nio.fs.UnixPath.<init>(UnixPath.java:71)
+	at sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:281)
+	at java.io.File.toPath(File.java:2186)
+	at org.eclipse.jgit.util.FileUtil.getFileAttributesPosix(FileUtil.java:260)
+	at org.eclipse.jgit.util.FS_POSIX.getAttributes(FS_POSIX.java:313)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.<init>(FileTreeIterator.java:169)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.entries(FileTreeIterator.java:144)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:129)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.<init>(AdaptableFileTreeIterator.java:74)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:85)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-12-25 02:21:36.520
+!MESSAGE An internal error occurred during: "Computing Git status for repository Algorithm_2015_Later".
+!STACK 0
+java.nio.file.InvalidPathException: Malformed input or input contains unmappable chacraters: /Users/liuw53/Desktop/Algorithm_2015_Later/Review/01背包
+	at sun.nio.fs.UnixPath.encode(UnixPath.java:147)
+	at sun.nio.fs.UnixPath.<init>(UnixPath.java:71)
+	at sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:281)
+	at java.io.File.toPath(File.java:2186)
+	at org.eclipse.jgit.util.FileUtil.getFileAttributesPosix(FileUtil.java:260)
+	at org.eclipse.jgit.util.FS_POSIX.getAttributes(FS_POSIX.java:313)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.<init>(FileTreeIterator.java:169)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.entries(FileTreeIterator.java:144)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:129)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.<init>(AdaptableFileTreeIterator.java:74)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:85)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.core 4 0 2015-12-25 02:21:36.597
+!MESSAGE Unable to ignore resources
+!STACK 0
+java.nio.file.InvalidPathException: Malformed input or input contains unmappable chacraters: /Users/liuw53/Desktop/Algorithm_2015_Later/Review/01背包
+	at sun.nio.fs.UnixPath.encode(UnixPath.java:147)
+	at sun.nio.fs.UnixPath.<init>(UnixPath.java:71)
+	at sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:281)
+	at java.io.File.toPath(File.java:2186)
+	at org.eclipse.jgit.util.FileUtil.getFileAttributesPosix(FileUtil.java:260)
+	at org.eclipse.jgit.util.FS_POSIX.getAttributes(FS_POSIX.java:313)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.<init>(FileTreeIterator.java:169)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.entries(FileTreeIterator.java:144)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:129)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.<init>(AdaptableFileTreeIterator.java:74)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:85)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.egit.core.RepositoryUtil.isIgnored(RepositoryUtil.java:495)
+	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:95)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.autoIgnoreDerivedResources(ConnectProviderOperation.java:180)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:155)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-12-25 02:21:36.617
+!MESSAGE An internal error occurred during: "Computing Git status for repository Algorithm_2015_Later".
+!STACK 0
+java.nio.file.InvalidPathException: Malformed input or input contains unmappable chacraters: /Users/liuw53/Desktop/Algorithm_2015_Later/Review/01背包
+	at sun.nio.fs.UnixPath.encode(UnixPath.java:147)
+	at sun.nio.fs.UnixPath.<init>(UnixPath.java:71)
+	at sun.nio.fs.UnixFileSystem.getPath(UnixFileSystem.java:281)
+	at java.io.File.toPath(File.java:2186)
+	at org.eclipse.jgit.util.FileUtil.getFileAttributesPosix(FileUtil.java:260)
+	at org.eclipse.jgit.util.FS_POSIX.getAttributes(FS_POSIX.java:313)
+	at org.eclipse.jgit.treewalk.FileTreeIterator$FileEntry.<init>(FileTreeIterator.java:169)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.entries(FileTreeIterator.java:144)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:129)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.<init>(AdaptableFileTreeIterator.java:74)
+	at org.eclipse.egit.core.AdaptableFileTreeIterator.createSubtreeIterator(AdaptableFileTreeIterator.java:85)
+	at org.eclipse.jgit.treewalk.AbstractTreeIterator.createSubtreeIterator(AbstractTreeIterator.java:535)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:924)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:578)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:434)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:534)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$6(IndexDiffCacheEntry.java:523)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:290)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
