@@ -9,7 +9,7 @@
 
 #include <iostream>
 using namespace std;
-const int M = 10005, F = 0x3f3f3f3f;
+const int M = 30, F = 0x3f3f3f3f;
 int N, a[M], x, m = 0;
 int main(int agrc, const char * agev[]) {
     cin >> N;
