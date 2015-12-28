@@ -60,10 +60,11 @@ int main(int argc, const char * argv[]) {
                 dp[i][j][0] = _max_dis;
                 if (matched(i, j))
                     dp[i][j][0] = min(dp[i][j][0], dp[i+1][j-1][0]);
-                for (int shortest_index = i; shortest_index <= j; ++ shortest_index)
-                    if (dp[i][j][0] > dp[i][shortest_index][0] + dp[shortest_index+1][j][0]) {
-                        dp[i][j][0] = dp[i][shortest_index][0] + dp[shortest_index+1][j][0];
-                        dp[i][j][1] = shortest_index;
+                // shortest_index = si
+                for (int si = i; si <= j; ++ si)
+                    if (dp[i][j][0] > dp[i][si][0] + dp[si+1][j][0]) {
+                        dp[i][j][0] = dp[i][si][0] + dp[si+1][j][0];
+                        dp[i][j][1] = si;
                     }
             }
         }

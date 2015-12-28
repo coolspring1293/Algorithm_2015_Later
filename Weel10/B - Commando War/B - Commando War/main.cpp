@@ -29,7 +29,7 @@ int main(int argc, const char * argv[]) {
             cin >> B >> J;
 			V.push_back(Commando(B, J));
         }
-		sort(V.begin(), V.end(), cmp);
+		sort(V.begin(), V.end(), cmp);// 从长到短排序
 		start_time = end_time = 0;
 		for (int i = 0; i < V.size(); ++ i) {
 			start_time += V[i].B;

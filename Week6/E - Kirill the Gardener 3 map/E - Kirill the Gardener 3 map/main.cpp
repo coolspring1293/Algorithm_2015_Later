@@ -12,7 +12,7 @@
 #include <algorithm>
 #include <map>
 #define M 100002
-#define INF 0x7FFFFFFF
+#define INF 0x3f3f3f3f
 using namespace std;
 
 class T {

@@ -15,20 +15,23 @@ using namespace std;
 
 int T, E, F, N, W[MAX], P[MAX], dp[MAX*20];
 int main(int argc, const char * argv[]) {
-    cin >> T;
+    cin >> T;// 样例个数
     while (T --) {
-        cin >> E >> F >> N;
+        cin >> E >> F >> N;// F - E 是背包的容量
         memset(W, 0, sizeof(W));
         memset(P, 0, sizeof(P));
-        memset(dp, INF, sizeof(dp)); dp[0] = 0;
+        memset(dp, INF, sizeof(dp)); // 求最小值，初始化为INF
+        dp[0] = 0;
         for (int i = 0; i < N; ++ i) cin >> P[i] >> W[i];
-        for (int i = 0; i < N; ++ i)
+        for (int i = 0; i < N; ++ i) // 完全背包
             for (int j = W[i]; j <= F - E; ++ j)
-                //if (dp[j-W[i]] < INF)
                     dp[j] = min(dp[j], dp[j-W[i]] + P[i]);
         
-        if (dp[F-E] >= INF) cout << "This is impossible.\n";
-        else cout << "The minimum amount of money in the piggy-bank is " << dp[F-E] << ".\n";
+        if (dp[F-E] >= INF)
+            cout << "This is impossible.\n";
+        else
+            cout << "The minimum amount of money in the piggy-bank is "
+                 << dp[F-E] << ".\n";
     }
     return 0;
 }
